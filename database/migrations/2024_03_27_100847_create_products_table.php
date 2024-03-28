@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug')->nullable();
             $table->foreignId('category_id')->nullable()->constrained();
             $table->integer('price')->nullable();
-            $table->boolean('is_actve')->default(true);
+            $table->boolean('is_active')->default(true);
             $table->string('image')->nullable();
             $table->timestamps();
         });
